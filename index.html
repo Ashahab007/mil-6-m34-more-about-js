@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More About JS</title>
+  </head>
+  <body>
+    <h1>Javascript Execution Context & Callstack</h1>
+    <p>Two kinds of executional Context in JS</p>
+    <ol>
+      <li>Global Execution Context (GEC)</li>
+      <p>
+        যখন javascript এর কোন file run করা হয় তখন default ভাবে Global Execution
+        Context তৈরি করে। সেখানে code গুলা run হয়। যদি কোন function এর body থাকে
+        তাহলে সেটা Global Context এ assign হয় কিন্তু call হয় না।
+      </p>
+      <li>Function Execution Context (FEC)</li>
+      <p>যখন function call করা হয় তখন function execution Context তৈরি হয়।</p>
+    </ol>
+    <br />
+    <h1>How all the execution context executes?</h1>
+    <h3>Creation Phase</h3>
+    <p>
+      যখন উপরের GEC এবং FEC তৈরি হয় তা javascript এর creation phase তৈরি করে যা
+      কোন code execution করে না। শুধু variable এবং function এর body গুলা
+      execution context এ assign করে।
+    </p>
+    <h3>Execution Phase</h3>
+    <p>Assigns the values to variables and executes the function call</p>
+    <br />
+    <h1>Javascript is a single threaded language</h1>
+    <p>
+      Javascript performs only one task at a time. It has only one call stack.
+    </p>
+    <h1>Synchronous & Asynchronous</h1>
+    <p>Synchronous: Executes immediately</p>
+    <p>
+      Asynchronous: Executes after specific time intervals. e.g. fetch,
+      setTimeout.
+    </p>
+  </body>
+</html>
