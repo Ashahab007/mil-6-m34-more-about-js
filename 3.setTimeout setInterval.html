@@ -13,9 +13,9 @@
     <p>
       যখন call stack খালি হয়ে যায় তখন event queue থেকে Asynchronous task টা call
       stack এ পাঠায় দেয় একটা একটা করে। একটা Asynchronous task call stack
-      complete করার পর তা যখন call stack থেকে খালি হয়ে যায় তখন আরেকটা
-      Asynchronous task call stack এ পাঠায় দেওয়া হয়। এই occurance টাকেই event
-      loop বলে।
+      complete করার পর তা যখন call stack থেকে বের হয়ে যায় তখন আরেকটা
+      Asynchronous task call stack এ পাঠায় দেওয়া event queue থেকে। এই occurance
+      টাকেই event loop বলে।
     </p>
     <script src="./script/3.setTimeout setInterval.js"></script>
   </body>
