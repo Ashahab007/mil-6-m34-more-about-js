@@ -24,7 +24,7 @@ const fetchData = () => {
 
 fetchData()
   .then((res) => console.log(res))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err)); //Status reject
 
 // ! Using Promise.all for fetching multiple API
 
