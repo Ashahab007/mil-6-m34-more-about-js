@@ -21,5 +21,6 @@ let updateCount = setInterval(() => {
   console.log(count);
   if (count === 6) {
     clearInterval(updateCount);
+    console.log("Counter stopped.");
   }
 }, 2000);
